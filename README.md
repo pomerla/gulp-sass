@@ -6,12 +6,16 @@
 ```
 git clone https://github.com/pomerla/gulp-sass.git
 ```
+2. Clone repository to the current folder
+```
+git clone https://github.com/pomerla/gulp-sass.git .
+```
 
-2. Run npm install
+1. Run npm install
 ```
 npm install
 ```
-3. Start project
+2. Start project
 ```
 npm start
 ```
