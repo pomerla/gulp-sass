@@ -5,13 +5,13 @@
 1. Clone repository
 
 ```
-git clone https://github.com/pomerla/gulp-sass.git
+git clone https://github.com/pomerla/react-gulp-sass.git
 ```
 
 2. Clone repository to the current folder
 
 ```
-git clone https://github.com/pomerla/gulp-sass.git .
+git clone https://github.com/pomerla/react-gulp-sass.git .
 ```
 
 ## Project launch and operation
