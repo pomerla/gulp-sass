@@ -1,6 +1,3 @@
-//firstreact.js
-'use strict';
-
 const e = React.createElement;
 
 class LikeButton extends React.Component {

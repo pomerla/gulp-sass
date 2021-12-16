@@ -1,17 +1,17 @@
 
-
-'use strict';
-
 const e = React.createElement;
 
 class MyComponent extends React.Component {
-    constructor(props) {
+    
+  constructor(props) {
       super(props);
       this.state = {
         error: null,
         isLoaded: false,
-        items: []
+        items: [],
+        render: false
       };
+      this.pbCouse = this.pbCouse.bind(this);
     }
   
     componentDidMount() {
@@ -24,8 +24,8 @@ class MyComponent extends React.Component {
               items: result
             });
           },
-          // Примечание: важно обрабатывать ошибки именно здесь, а не в блоке catch(),
-          // чтобы не перехватывать исключения из ошибок в самих компонентах.
+          // Note: it is important to handle errors here, not in the block catch(),
+          // so as not to catch exceptions from errors in the components themselves.
           (error) => {
             this.setState({
               isLoaded: true,
@@ -34,7 +34,11 @@ class MyComponent extends React.Component {
           }
         )
     }
-  
+    
+    pbCouse() {
+      this.setState({render: !this.state.render});
+    }
+
     render() {
       const { error, isLoaded, items } = this.state;
       if (error) {
@@ -42,15 +46,21 @@ class MyComponent extends React.Component {
       } else if (!isLoaded) {
         return <div>Загрузка...</div>;
       } else {
-        return (
-          <ul>
-            {items.map(item => (
-              <li key={item.id}>
-                {item.ccy}/{item.base_ccy} (Buy: {item.buy} - Sale: {item.sale} ) 
-              </li>
-            ))}
-          </ul>
-        );
+        if (!this.state.render) {
+          return(
+              <button onClick={this.pbCouse}>Show courses</button>
+          );  
+        }else {
+          return (
+            <ul>
+              {items.map(item => (
+                <li key={item.id}>
+                  {item.ccy}/{item.base_ccy} (Buy: {item.buy} - Sale: {item.sale} ) 
+                </li>
+              ))}
+            </ul>
+          );
+        }
       }
     }
   }
