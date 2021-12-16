@@ -14,13 +14,13 @@ git clone https://github.com/pomerla/gulp-sass.git
 git clone https://github.com/pomerla/gulp-sass.git .
 ```
 
+## Project launch and operation
+
 1. Run npm install
 
 ```
 npm install
 ```
-
-## Project launch and operation
 
 2. Starting a project without React
 
