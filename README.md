@@ -1,6 +1,6 @@
 # React + Gulp + Sass
 
-[React + Gulp + Sass] (pomerla.github.io/assets/react_gulp_sass.png)
+<img src="https://pomerla.github.io/assets/react_gulp_sass.png" align="center">
 
 ## Installation (development)
 
