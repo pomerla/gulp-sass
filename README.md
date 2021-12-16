@@ -1,6 +1,6 @@
 # React + Gulp + Sass
 
-<img src="https://pomerla.github.io/assets/react_gulp_sass.png" align="center">
+<img src="https://wpdew.github.io/assets/react_gulp_sass.png" align="center">
 
 ## Installation (development)
 
