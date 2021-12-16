@@ -20,6 +20,8 @@ git clone https://github.com/pomerla/gulp-sass.git .
 npm install
 ```
 
+## Project launch and operation
+
 2. Starting a project without React
 
 ```
