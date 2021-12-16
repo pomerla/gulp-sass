@@ -1,5 +1,7 @@
 # React + Gulp + Sass
 
+[React + Gulp + Sass] (pomerla.github.io/assets/react_gulp_sass.png)
+
 ## Installation (development)
 
 1. Clone repository
