@@ -8,6 +8,7 @@ module.exports = [
   './gulp/tasks/html',
   './gulp/tasks/images',
   './gulp/tasks/serve',
+  './gulp/tasks/servereact',
   './gulp/tasks/svg',
   './gulp/tasks/build',
   './gulp/tasks/buildreact',

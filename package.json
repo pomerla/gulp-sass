@@ -7,7 +7,7 @@
     "build": "gulp build",
     "start": "npm run build && gulp serve",
     "buildreact": "gulp buildreact",
-    "react": "npm run buildreact && gulp serve"
+    "react": "npm run buildreact && gulp servereact"
   },
   "author": "",
   "license": "ISC",
