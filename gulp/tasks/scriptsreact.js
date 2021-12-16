@@ -1,14 +1,14 @@
 const react = require("react");
 
 const jsFiles = [
-  //$.path.react,
-  //$.path.reactdom,
+  $.path.react,
+  $.path.reactdom,
   $.path.js,
 ];
 
 
 module.exports = function () {
-  $.gulp.task('scripts', function () {
+  $.gulp.task('scriptsreact', function () {
     return $.gulp.src(jsFiles)
         .pipe($.gp.plumber())
         .pipe($.gp.sourcemaps.init())

@@ -1,6 +1,7 @@
 module.exports = [
   './gulp/tasks/sass',
   './gulp/tasks/scripts',
+  './gulp/tasks/scriptsreact',
   './gulp/tasks/copy',
   './gulp/tasks/clean',
   './gulp/tasks/allimg',
@@ -9,5 +10,6 @@ module.exports = [
   './gulp/tasks/serve',
   './gulp/tasks/svg',
   './gulp/tasks/build',
+  './gulp/tasks/buildreact',
   './gulp/tasks/critical',
 ];

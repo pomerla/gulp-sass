@@ -7,7 +7,9 @@ global.$ = {
   pngquant: require('imagemin-pngquant'),
   path: {
     config: require('./gulp/config'),
-    js: './js/**/*.js',
+    js: './js/**/*.*',
+    react: './node_modules/react/umd/react.production.min.js',
+    reactdom: './node_modules/react-dom/umd/react-dom.production.min.js',
   }
 };
 
